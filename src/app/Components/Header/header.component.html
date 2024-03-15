@@ -1,0 +1,42 @@
+<header class="p-3 bg-white text-dark">
+  <div class="container">
+    <div class="d-flex flex-wrap align-items-center justify-content-between">
+
+      <a routerLink="/Home" class="d-flex align-items-center mb-2 mb-lg-0 text-dark text-decoration-none" >
+        <h1>OMAR</h1>
+      </a>
+
+      
+      <div class="dropdown">
+        <button
+          class="Catbtn dropdown-toggle"
+          type="button"
+          id="dropdownMenuButton"
+          data-mdb-toggle="dropdown"
+          aria-expanded="false"
+        >
+      Categories
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          @for (category of categories; track $index) {
+            <a class="dropdown-item" (click)="ShowCourseByCategory(category.name)">{{category.name}}</a>
+          }
+        </ul>
+      </div>
+
+      <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3 w-50">
+        <input type="search" class="form-control form-control-dark" placeholder="Search..." aria-label="Search" (input)="onSearchInputChange($event)">
+      </form>
+
+      <div class="text-end">
+        @if(AthService.IsLoggedIn()){
+          <button class="btn btn-primary" (click)="logout()" routerLink="/courses">Sign out</button>
+        }
+        @else{
+          <button class="btn btn-primary" routerLink="/sign-in">Sign in</button>
+
+        }
+      </div>
+    </div>
+  </div>
+</header>

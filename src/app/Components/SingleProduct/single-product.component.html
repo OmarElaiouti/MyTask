@@ -1,0 +1,17 @@
+<div class="card" [appProductDirective]= "course.enrolled_students" style="width: 18rem;" (click)="RouteCourse()">
+    <img class="card-img-top"  [src]="" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">{{course.name}}</h5>
+      <p class="card-text">Price: {{course.price | currency:'USD'}}</p>
+      <p class="card-text">Instructor : {{course.instructor}}</p>
+      <p class="card-text">Num of Students :{{course.enrolled_students}}</p>
+      <p class="card-text">Category :{{course.category}}</p>
+
+      <p class="card-text">{{course.description}}</p>
+      @if(AthService.isAdmin()){
+        <button class="btn btn-primary" (click)="DeleteCourse(course,$event)">Remove</button>
+      }
+      <button  class="btn btn-primary" (click)="incrementStudents();addToCart(course,$event)">Buy</button>
+
+    </div>
+  </div>

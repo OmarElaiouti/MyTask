@@ -1,0 +1,28 @@
+  <form (ngSubmit)="updateCourse()" class="mt-3">
+    <div class="mb-3">
+      <label for="id" class="form-label">ID:</label>
+      <input type="text" id="id" name="id" class="form-control" [(ngModel)]="course.id" required>
+    </div>
+    <div class="mb-3">
+      <label for="name" class="form-label">Name:</label>
+      <input type="text" id="name" name="name" class="form-control" [(ngModel)]="course.name" required>
+    </div>
+    <div class="mb-3">
+      <label for="price" class="form-label">Price:</label>
+      <input type="text" id="price" name="price" class="form-control" [(ngModel)]="course.price" required>
+    </div>
+    <div class="mb-3">
+      <label for="description" class="form-label">Description:</label>
+      <textarea id="description" name="description" class="form-control" [(ngModel)]="course.description" required></textarea>
+    </div>
+    <div class="mb-3">
+      <label for="instructor" class="form-label">Instructor:</label>
+      <input type="text" id="instructor" name="instructor" class="form-control" [(ngModel)]="course.instructor" required>
+    </div>
+    <div class="mb-3">
+      <label for="category" class="form-label">Category:</label>
+      <input type="text" id="category" name="category" class="form-control" [(ngModel)]="course.category" required>
+    </div>
+    <button type="submit" class="btn btn-primary">Add Course</button>
+  </form>
+  

@@ -1,0 +1,6 @@
+.card {
+    flex: 1 1 300px; /* Adjust the width of each card */
+    background-color: #f0f0f0;
+    padding: 20px;
+  margin: 0 10px 20px;
+  }

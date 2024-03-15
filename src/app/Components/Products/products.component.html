@@ -1,0 +1,7 @@
+<div class="p-2 courses-container d-flex flex-wrap justify-content-center align-items-center">
+
+  
+  @for(course of courses ; track course.id){
+    <app-single-product [course]="course" ></app-single-product>
+}
+  </div>

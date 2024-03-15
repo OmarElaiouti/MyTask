@@ -1,0 +1,15 @@
+<div >
+    @if(course){
+    <h2>{{ course.name }}</h2>
+    <p>{{ course.description }}</p>
+    <p>Instructor: {{ course.instructor }}</p>
+    <p>Students: {{ course.enrolled_students }}</p>
+  
+    <button [disabled]="disable1" (click)="goToNextCourse()">Next</button>
+    <button [disabled]="disable" (click)="goToPreviousCourse()">Previous</button>
+    @if(AthService.isAdmin()){
+    <button (click)="editProduct()">Edit Product</button>
+    }
+
+}
+  </div>
