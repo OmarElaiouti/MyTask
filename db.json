@@ -1,0 +1,124 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "name": "John Doe",
+      "email": "john@example.com",
+      "password": "password123",
+      "role": "student",
+      "cart": []
+    },
+    {
+      "id": "2",
+      "name": "Jane Smith",
+      "email": "jane@example.com",
+      "password": "secret321",
+      "role": "instructor",
+      "cart": []
+    },
+    {
+      "id": "3",
+      "name": "Admin",
+      "email": "admin@example.com",
+      "password": "admin123",
+      "role": "admin",
+      "cart": []
+    }
+  ],
+  "courses": [
+    {
+      "id": "1",
+      "name": "Introduction to Angular",
+      "price": 49.99,
+      "category": "Web Development",
+      "description": "Learn the basics of Angular framework.",
+      "instructor": "Jane Smith",
+      "enrolled_students": 100
+    },
+    {
+      "id": "2",
+      "name": "Advanced JavaScript",
+      "price": 59.99,
+      "category": "Programming",
+      "description": "Dive deeper into JavaScript concepts.",
+      "instructor": "John JJJJJJ",
+      "enrolled_students": 75
+    },
+    {
+      "id": "4",
+      "name": "React.js Essentials",
+      "price": 54.99,
+      "category": "Web Development",
+      "description": "Master the fundamentals of React.js.",
+      "instructor": "John JJJJJJ",
+      "enrolled_students": 90
+    },
+    {
+      "id": "5",
+      "name": "Python Programming for Beginners",
+      "price": 39.99,
+      "category": "Programming",
+      "description": "A beginner-friendly guide to Python programming.",
+      "instructor": "Jane Smith",
+      "enrolled_students": 120
+    },
+    {
+      "id": "6",
+      "name": "Deep Learning with TensorFlow",
+      "price": 89.99,
+      "category": "Data Science",
+      "description": "Explore deep learning concepts using TensorFlow framework.",
+      "instructor": "John Doe",
+      "enrolled_students": 60
+    },
+    {
+      "id": "7",
+      "name": "Full Stack Web Development Bootcamp",
+      "price": 129.99,
+      "category": "Web Development",
+      "description": "Comprehensive course covering frontend and backend development.",
+      "instructor": "Jane Smith",
+      "enrolled_students": 80
+    },
+    {
+      "id": "8",
+      "name": "Java Programming Masterclass",
+      "price": 69.99,
+      "category": "Programming",
+      "description": "Learn advanced Java programming concepts and techniques.",
+      "instructor": "John Doe",
+      "enrolled_students": 65
+    },
+    {
+      "id": "9",
+      "name": "Data Visualization with D3.js",
+      "price": 49.99,
+      "category": "Data Science",
+      "description": "Create stunning data visualizations with D3.js library.",
+      "instructor": "Jane Smith",
+      "enrolled_students": 45
+    }
+  ],
+  "categories": [
+    {
+      "id": "1",
+      "name": "Web Development"
+    },
+    {
+      "id": "2",
+      "name": "Programming"
+    },
+    {
+      "id": "3",
+      "name": "Data Science"
+    },
+    {
+      "id": "4",
+      "name": "Mobile Development"
+    },
+    {
+      "id": "5",
+      "name": "UI/UX Design"
+    }
+  ]
+}
